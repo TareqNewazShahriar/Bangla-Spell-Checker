@@ -5,7 +5,7 @@
 
 
 (Forked from past/speller)
-##### _Original Readme_
+##### _Original Readme, as of 2020-11-25_
 > Speller
 > =======
 > 
