@@ -113,6 +113,7 @@ speller.max = function (candidates) {
 };
 
 speller.letters = "abcdefghijklmnopqrstuvwxyz".split("");
+// speller.letters = "অআইঈউঊঋঌএঐওঔকখগঘঙচছজঝঞটঠডঢণতথদধনপফবভমযরলশষসহ়ঽািীুূৃৄেৈোৌ্ৎৗড়ঢ়য়ঁংঃ".split("");
 
 // A function that returns the set of possible corrections of the specified word.
 // The edits can be deletions, insertions, alterations or transpositions.

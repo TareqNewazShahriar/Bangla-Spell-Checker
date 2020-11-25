@@ -1,6 +1,6 @@
-## Bangla Spell Checker
+## Spell Checker
 
-[Demo](https://tareqnewazshahriar.github.io/Bangla-Spell-Checker/demo)
+[Demo](https://tareqnewazshahriar.github.io/Spell-Checker/demo)
 
 
 
