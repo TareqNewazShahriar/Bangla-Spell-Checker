@@ -4,7 +4,7 @@
 
 
 
-##### (Forked from past/speller)
+(Forked from past/speller)
 ##### _Original Readme_
 > Speller
 > =======
