@@ -14,7 +14,7 @@ tusk and [npm](http://npmjs.org) package managers to install speller on narwhal
 and node, respectively. Alternatively, you can see the code in action right
 inside your browser in the following page:
 
-[http://past.github.com/speller/](http://past.github.com/speller/)
+[https://tareqnewazshahriar.github.io/speller/](https://tareqnewazshahriar.github.io/speller/)
 
 Contents
 --------
