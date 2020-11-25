@@ -1,5 +1,5 @@
-Speller
-=======
+## Bangla Spell Checker
+##### (Forked from past/speller)
 
 This is a JavaScript implementation of Peter Norvig's statistical spell-checking
 algorithm. You can read more about the approach in the original article:
