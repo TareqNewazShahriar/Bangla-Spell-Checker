@@ -4,8 +4,8 @@
 
 
 
-(Forked from past/speller)
-##### _Original Readme, as of 2020-11-25_
+_Forked from past/speller_
+##### _Original Readme, (as of 2020-11-25)_
 > Speller
 > =======
 > 
