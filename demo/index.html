@@ -7,6 +7,28 @@
    <script src="big.en.js"></script>
    <script type="text/javascript">
       $(document).ready(function () {
+         // Train the tool
+         loading();
+         // Before starting, give some time to update the UI
+         setTimeout(() => {
+            var t0 = new Date();
+            var t1 = new Date();
+            print("Loaded file in " + (t1 - t0) + " msec");
+            var lines = bigText.split("\n");
+            var count = lines.length;
+            lines.forEach(function (line) {
+               setTimeout(function () {
+                  speller.train(line);
+                  count--;
+                  if (count == 0) {
+                     var t2 = new Date();
+                     print("Trained in " + (t2 - t1) + " msec");
+                     loading(false);
+                  }
+               }, 0);
+            });
+         }, 100);
+         
          $("#correct").click(function (event) {
             loading();
             var word = $('#word')[0].value;
@@ -15,30 +37,7 @@
                loading(false);
             }, 0);
          });
-
-         $("#train").click(function (event) {
-            loading();
-
-            // Before starting, give some time to update the UI
-            setTimeout(() => {
-               var t0 = new Date();
-               var t1 = new Date();
-               print("Loaded file in " + (t1 - t0) + " msec");
-               var lines = bigText.split("\n");
-               var count = lines.length;
-               lines.forEach(function (line) {
-                  setTimeout(function () {
-                     speller.train(line);
-                     count--;
-                     if (count == 0) {
-                        var t2 = new Date();
-                        print("Trained in " + (t2 - t1) + " msec");
-                        loading(false);
-                     }
-                  }, 0);
-               });
-            }, 100);
-         });
+         
          var work = function (event) {
             loading();
             var worker = new Worker("worker.js");
@@ -109,7 +108,7 @@
                   (about a million in this case) and building a language model. This file is the
                   same one used by Norvig. You can click on the 'train' button to do it (note that
                   your browser may become unresponsive for a few seconds):
-                  <button id="train">train</button>
+                  <button id="train" disabled>train (done)</button>
                   <p>With the spell-checking engine trained, we can now request corrections for any
                      words we want. You can enter a misspelled word in the input box below and then click
                      on the 'correct' button to correct it:<br>
