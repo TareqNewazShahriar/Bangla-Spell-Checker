@@ -24,6 +24,7 @@
                      var t2 = new Date();
                      print("Trained in " + (t2 - t1) + " msec");
                      loading(false);
+                     document.querySelector('#train').value = 'train (done)'
                   }
                }, 0);
             });
@@ -108,7 +109,7 @@
                   (about a million in this case) and building a language model. This file is the
                   same one used by Norvig. You can click on the 'train' button to do it (note that
                   your browser may become unresponsive for a few seconds):
-                  <button id="train" disabled>train (done)</button>
+                  <button id="train" disabled>train</button>
                   <p>With the spell-checking engine trained, we can now request corrections for any
                      words we want. You can enter a misspelled word in the input box below and then click
                      on the 'correct' button to correct it:<br>
