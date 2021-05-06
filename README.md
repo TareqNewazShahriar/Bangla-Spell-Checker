@@ -1,5 +1,7 @@
 ## Spell Checker
 
+A forked English spell checker project to enhance and develop a Bengali spell checker.
+
 [Demo](https://tareqnewazshahriar.github.io/Spell-Checker/demo)
 
 
